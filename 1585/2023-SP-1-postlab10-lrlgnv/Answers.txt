@@ -1,0 +1,13 @@
+Problem 1)
+1. grep -v "#"
+2. grep -v "#"
+
+Problem 2)
+sed "s/[aeiou]//gi"
+
+Problem 3)
+about 185
+
+Problem 4)
+grep -Po "[(]?\d{3}[- ()]?\d{3}[- ]?\d{4}"
+sed -E  "s/[(]?([0-9]{3})[- ()]?([0-9]{3})[- ]?([0-9]{4})/(\1) \2-\3/g" phonebook.txt

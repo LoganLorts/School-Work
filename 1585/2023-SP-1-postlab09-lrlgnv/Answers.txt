@@ -1,0 +1,13 @@
+Prob 1:
+1) Operator[](unsigned int) called 500500 times
+length()const called 502500 times
+2) 1000 times
+3)The average function uses a pass by value
+4) Done
+5) Yes, copy constructor is called 0 times
+
+Prob 2:
+1) Line 11
+2) 15895
+3)Done
+4) Yes. The average calculation still takes the same number of calculations but is run once as I moved it out of the while loop.

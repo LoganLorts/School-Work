@@ -1,0 +1,7 @@
+Problem1: 
+1. There is a variable that is not being disallocated.
+2. On line 114 the program makes a dynamically allocated List but does not delete it.
+
+Problem2: 
+1. There are a lot of faulty addresses
+2. On line 77 it makes a dynamically allocated Vector but does not delete it. Also the copy constructor had to be fixed in order to properly copy over the data into copy. Before copy was copying the memory address that was then deleted.

@@ -1,0 +1,22 @@
+compiler = g++
+SOURCES = $(wildcard *.cpp)
+OBJECTS = $(SOURCES:%.cpp=%.o)
+HEADERS = $(wildcard *.h)
+
+CFLAGS = -O2
+DEBUGFLAGS= -g -Wall -Wextra
+
+program: ${OBJECTS}
+	${compiler} ${CFLAGS} $^
+
+%.o: %.cpp ${HEADERS}
+	g++ -c $<
+
+.PHONY: debug
+debug: CFLAGS=${DEBUGFLAGS}
+debug: program
+
+.PHONY: clean
+
+clean:
+	-@ rm -f program *.o
