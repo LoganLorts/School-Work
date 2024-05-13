@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{geometry}
+\usepackage{bm}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+
+\title{Lab 12: \LaTeX{}}
+\author{Logan Lorts}
+\date{November 26, 2018}
+
+\begin{document}
+\maketitle
+
+\section*{Directions}
+Your lab assignment today is to write the code to produce \textbf{this document (yes this one, the whole thing)} as well as a ”README.md” which mimics this. You should end up with a second copy of this document at the end, but one that you compiled using \LaTeX{} via the \texttt{pdflatex} command.
+\begin{enumerate}
+    \item{First, write some ”code” (hint: \LaTeX{} is popular on stack overflow).}
+    \item{Then, compile it with \texttt{pdflatex}.}
+    \item{Check the pdf to see if it looks right.}
+    \item{Rinse, repeat.}
+    \item{When you’re done, submit your tex file and ”README.md”.}
+\end{enumerate}
+
+\section*{Text Formatting}
+Sometimes, you \textit{may} want to \textbf{\underline{emphasize}} some text.
+
+\section*{Problem 0: Latent Dirichlet Allocation}
+Hey, can you help me with my homework? In Latent Dirichlet Allocation, we might need to use the equation for collapsed Gibbs sampling with equal document lengths $N$. (hint: math symbols can’t be emphasized like text)
+
+According to our model, the total probability is given as follows:
+\begin{equation}
+P(\bm{W},\bm{Z},\bm{\theta},\bm{\varphi},\alpha,\beta)=\prod_{i=1}^{M}P(\varphi_i;\beta)\prod_{j=1}^{M}P(\theta_j;\alpha)\prod_{t=1}^{M}P(Z_{j,t})|\theta_j)P(W_{j,t}|\varphi_{z_{j,t}})
+\end{equation}
+\begin{equation}
+P(\bm{W},\bm{Z},\bm{\theta},\bm{\varphi},\alpha,\beta)=\prod_{j=1}^{M}\frac{\Gamma(\sum_{i=1}^K\alpha_i)\prod_{i=1}^K\Gamma(n_{j,(.)}^i+\alpha_i)}{\prod_{i=1}^K\Gamma(\alpha_i)\Gamma(\sum_{i=1}^Kn_{j,(.)}^i+\alpha_i)}\times\prod_{j=1}^{M}\frac{\Gamma(\sum_{i=1}^V\beta_r)\prod_{i=1}^V\Gamma(n_{(.),r}^i+\beta_r)}{\prod_{i=1}^V\Gamma(\beta_r)\Gamma(\sum_{i=1}^Vn_{(.),r}^i+\beta_r)}
+\end{equation}
+Now we can work with that!
+
+\begin{figure} [h]
+\centering
+\includegraphics[width=0.4\textwidth]{wow.jpg}
+\end{figure}
+
+\section*{Problem 1: Let's Learn Markdown!}
+Make your git page’s README.md to mimic this paper. HINT: you can embed latex equations into your markdown. You could use Pandoc, but don’t because that’s cheating. To keep it simple, I’d recommend turning your equations into images.
+
+\end{document}
