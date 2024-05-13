@@ -1,5 +1,0 @@
-a
-b
-aabb
-aabbabb
-aabbabbabb
