@@ -1,0 +1,7 @@
+~ F S UID     SZ        TTY   CMD
+ 10 W   0    160         co ps -ac
+ 10 S   0    177         co -sh
+ 10 S   0     23         c3 getty
+ 10 S   0     23         c2 getty
+ 10 S   0     23         c1 getty
+  0 R   0    177         co /bin/sh ./grade.sh

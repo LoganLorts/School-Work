@@ -1,0 +1,27 @@
+~ F S UID     SZ        TTY   CMD
+ 10 W   0   5241          ? fs
+ 10 W   0    201          ? /sbin/is
+ 10 W   0    160         co ps -axc
+ 10 W   0    139          ? rs
+ 10 W   0    133          ? /usr/sbin/printer
+ 10 W   0     76          ? tty
+ 10 W   0     73          ? log
+ 10 W   0     71          ? pm
+ 10 W   0     54          ? driver
+ 10 W   0     53          ? CLOCK
+ 10 W   0     42          ? /usr/sbin/random
+ 10 W   0     18          ? /sbin/floppy
+ 10 W   0     13          ? memory
+ 10 W   0     12          ? /sbin/cmos
+ 10 S   0    177         co -sh
+ 10 S   0     63          ? cron
+ 10 S   0     39          ? usyslogd
+ 10 S   0     23         c3 getty
+ 10 S   0     23         c2 getty
+ 10 S   0     23         c1 getty
+ 10 S   0     12          ? init
+ 10 S   0      7          ? update
+  2 W   0     53          ? KERNEL
+  0 R   0    177         co /bin/sh ./grade.sh
+  0 R   0     53          ? SYSTEM
+  0 R   0     53          ? IDLE
