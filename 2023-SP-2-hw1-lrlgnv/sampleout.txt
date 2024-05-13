@@ -1,0 +1,3 @@
+#0: Bender catches 46 fish
+#1: Bender catches 74 fish
+#2: Bender catches 93 fish
