@@ -1,0 +1,5 @@
+		flex mylexer.l
+		g++ lex.yy.c -lfl -o lexer.ex
+		./lexer.ex < sampleinput.txt
+
+        [a-zA-Z0-9]+    { print_format(no_tokens, "STRCONST", yytext); no_tokens++; }
