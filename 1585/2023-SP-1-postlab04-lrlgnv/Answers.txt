@@ -1,0 +1,13 @@
+1)
+	a) bash compiley.sh program.cpp hello
+	b) it takes two inputs, the input file then the output, and compiles the file with g++ -o "$OUTPUT" "$INPUT"
+
+2)
+	a) It doesn't work
+	b) It is treating "my" and "program.cpp" as two different parameters
+3)
+	a) Still doesn't work
+	b) It is taking "$@" as parameters when compiling
+4)
+	a) Yes
+	b) Single quotes don't take $ as a variable clarifier
