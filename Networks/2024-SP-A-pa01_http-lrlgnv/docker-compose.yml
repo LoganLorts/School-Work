@@ -1,0 +1,25 @@
+services:
+  web_server:
+    image: git-docker-classes.mst.edu/containers/container
+    command: sh -c "python3 web_server.py"
+    ports: 
+      - "6789:6789"
+    working_dir: /your_code
+    volumes:
+      - .:/your_code
+    networks: 
+      - db-data
+
+  client:
+    image: git-docker-classes.mst.edu/containers/container
+    command: sh -c "python3 client_browser.py web_server 6789 "web_files/hello_web.html"""
+    working_dir: /your_code
+    volumes:
+      - .:/your_code
+    networks:
+      - db-data
+
+networks:
+  db-data:
+    driver: bridge
+    external: true
