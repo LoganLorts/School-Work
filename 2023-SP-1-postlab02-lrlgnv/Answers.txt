@@ -1,4 +1,0 @@
-Q1: print_vector function on line 48
-Q2: the print_vector funtion goes in an infinite loop because of print_this.size
-Q3: Line 58 had i instead of i++
-Q4: Line 68 needed an = instead of <=
